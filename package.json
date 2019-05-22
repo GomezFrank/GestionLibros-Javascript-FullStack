@@ -1,0 +1,37 @@
+{
+  "name": "LIBROS-JAVASCRIPT-FULLSTACK",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development nodemon Backend/index.js --ignore Frontend",
+    "start": "cross-env NODE_ENV=production node Backend/index.js",
+    "postinstall":"npm run build",
+    "build":"cross-env NODE_ENV=production webpack",
+    "server:dev":"webpack-dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "cross-env": "^5.2.0",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.0",
+    "fs-extra": "^8.0.1",
+    "mongoose": "^5.5.10",
+    "morgan": "^1.9.1",
+    "multer": "^1.4.1"
+  },
+  "devDependencies": {
+    "css-loader": "^2.1.1",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.6.0",
+    "nodemon": "^1.19.0",
+    "style-loader": "^0.23.1",
+    "timeago.js": "^4.0.0-beta.2",
+    "webpack": "^4.32.0",
+    "webpack-cli": "^3.3.2",
+    "webpack-dev-server": "^3.4.1"
+  }
+}
